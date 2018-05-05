@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{A127B90A-6C02-483D-A876-C5B088E5369D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{60F951E5-A550-43A4-ADB3-854A298E7292}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{E625E032-2AE7-41DD-8A84-93D00466CF50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{D518069D-0118-4470-93B7-0964764F0982}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{43B0DB16-FDBB-4403-A954-289D75789C84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{8947810D-9D6E-47FB-BB1D-E14FE266C8E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{5F595BA8-B61D-49D7-8AF7-4D4EBE5D656F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Domain", "src\Eventos.IO.Domain\Eventos.IO.Domain.csproj", "{760943E5-774C-4E45-B26A-CAD2BAC754CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Domain.Core", "src\Eventos.IO.Domain.Core\Eventos.IO.Domain.Core.csproj", "{89E58A31-50AD-4C7B-B30A-63775388ECB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.Data", "src\Eventos.IO.Infra.Data\Eventos.IO.Infra.Data.csproj", "{74C8096E-E143-4DF3-A6DA-C6F861A526C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Site", "src\Eventos.IO.Site\Eventos.IO.Site.csproj", "{A66857C2-3966-4797-B366-520E1698EA8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Application", "src\Eventos.IO.Application\Eventos.IO.Application.csproj", "{40293474-6B6A-415E-B1F5-875F4EB1D2A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.CrossCutting.IoC", "src\Eventos.IO.Infra.Crosscutting.IoC\Eventos.IO.Infra.CrossCutting.IoC.csproj", "{06D86552-F1DB-45E3-ADAE-8269EF560C19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos.IO.Infra.CrossCutting.Bus", "src\Eventos.IO.Infra.CrossCutting.Bus\Eventos.IO.Infra.CrossCutting.Bus.csproj", "{1D189630-17B8-4F93-9769-B48FE2A4EB70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{760943E5-774C-4E45-B26A-CAD2BAC754CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760943E5-774C-4E45-B26A-CAD2BAC754CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760943E5-774C-4E45-B26A-CAD2BAC754CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760943E5-774C-4E45-B26A-CAD2BAC754CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E58A31-50AD-4C7B-B30A-63775388ECB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E58A31-50AD-4C7B-B30A-63775388ECB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E58A31-50AD-4C7B-B30A-63775388ECB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E58A31-50AD-4C7B-B30A-63775388ECB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C8096E-E143-4DF3-A6DA-C6F861A526C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C8096E-E143-4DF3-A6DA-C6F861A526C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C8096E-E143-4DF3-A6DA-C6F861A526C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C8096E-E143-4DF3-A6DA-C6F861A526C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A66857C2-3966-4797-B366-520E1698EA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66857C2-3966-4797-B366-520E1698EA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66857C2-3966-4797-B366-520E1698EA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66857C2-3966-4797-B366-520E1698EA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40293474-6B6A-415E-B1F5-875F4EB1D2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40293474-6B6A-415E-B1F5-875F4EB1D2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40293474-6B6A-415E-B1F5-875F4EB1D2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40293474-6B6A-415E-B1F5-875F4EB1D2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D86552-F1DB-45E3-ADAE-8269EF560C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D86552-F1DB-45E3-ADAE-8269EF560C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D86552-F1DB-45E3-ADAE-8269EF560C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D86552-F1DB-45E3-ADAE-8269EF560C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D189630-17B8-4F93-9769-B48FE2A4EB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D189630-17B8-4F93-9769-B48FE2A4EB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D189630-17B8-4F93-9769-B48FE2A4EB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D189630-17B8-4F93-9769-B48FE2A4EB70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8947810D-9D6E-47FB-BB1D-E14FE266C8E9} = {43B0DB16-FDBB-4403-A954-289D75789C84}
+		{5F595BA8-B61D-49D7-8AF7-4D4EBE5D656F} = {43B0DB16-FDBB-4403-A954-289D75789C84}
+		{760943E5-774C-4E45-B26A-CAD2BAC754CD} = {D518069D-0118-4470-93B7-0964764F0982}
+		{89E58A31-50AD-4C7B-B30A-63775388ECB8} = {D518069D-0118-4470-93B7-0964764F0982}
+		{74C8096E-E143-4DF3-A6DA-C6F861A526C1} = {8947810D-9D6E-47FB-BB1D-E14FE266C8E9}
+		{A66857C2-3966-4797-B366-520E1698EA8F} = {A127B90A-6C02-483D-A876-C5B088E5369D}
+		{40293474-6B6A-415E-B1F5-875F4EB1D2A7} = {E625E032-2AE7-41DD-8A84-93D00466CF50}
+		{06D86552-F1DB-45E3-ADAE-8269EF560C19} = {5F595BA8-B61D-49D7-8AF7-4D4EBE5D656F}
+		{1D189630-17B8-4F93-9769-B48FE2A4EB70} = {5F595BA8-B61D-49D7-8AF7-4D4EBE5D656F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35C13A54-BA73-40D8-B2D5-2E6E66C84A0C}
+	EndGlobalSection
+EndGlobal

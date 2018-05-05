@@ -1,0 +1,1 @@
+Implementação de um sistema gerenciador de eventos através da arquitetura CQRS, e com ultilização de uma api em Angular.

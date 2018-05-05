@@ -1,0 +1,11 @@
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\bin\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.deps.json
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\bin\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.dll
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\bin\Debug\netstandard1.6\Eventos.IO.Domain.Core.dll
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\bin\Debug\netstandard1.6\Eventos.IO.Domain.Core.pdb
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.csprojResolveAssemblyReference.cache
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.AssemblyInfo.cs
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.csproj.CopyComplete
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\bin\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.pdb
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.dll
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.Bus\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Bus.pdb

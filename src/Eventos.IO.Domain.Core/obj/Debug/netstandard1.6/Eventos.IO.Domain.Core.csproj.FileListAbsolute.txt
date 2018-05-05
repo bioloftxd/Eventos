@@ -1,0 +1,8 @@
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\bin\Debug\netstandard1.6\Eventos.IO.Domain.Core.deps.json
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\bin\Debug\netstandard1.6\Eventos.IO.Domain.Core.dll
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\bin\Debug\netstandard1.6\Eventos.IO.Domain.Core.pdb
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netstandard1.6\Eventos.IO.Domain.Core.csprojResolveAssemblyReference.cache
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netstandard1.6\Eventos.IO.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netstandard1.6\Eventos.IO.Domain.Core.AssemblyInfo.cs
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netstandard1.6\Eventos.IO.Domain.Core.dll
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netstandard1.6\Eventos.IO.Domain.Core.pdb
