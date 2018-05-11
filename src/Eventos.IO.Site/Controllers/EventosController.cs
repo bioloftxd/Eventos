@@ -61,6 +61,7 @@ namespace Eventos.IO.Site.Controllers
         {
             if (id == null)
             {
+                Console.WriteLine("Id não encontrado!");
                 return NotFound();
             }
 
@@ -68,6 +69,7 @@ namespace Eventos.IO.Site.Controllers
 
             if (eventoViewModel == null)
             {
+                Console.WriteLine("View Model não encontrado!");
                 return NotFound();
             }
             

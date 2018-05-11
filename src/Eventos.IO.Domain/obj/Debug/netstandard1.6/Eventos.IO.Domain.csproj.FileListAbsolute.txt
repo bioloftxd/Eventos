@@ -1,5 +1,4 @@
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\bin\Debug\netstandard1.6\Eventos.IO.Domain.deps.json
-C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netstandard1.6\Eventos.IO.Domain.csprojResolveAssemblyReference.cache
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netstandard1.6\Eventos.IO.Domain.csproj.CoreCompileInputs.cache
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netstandard1.6\Eventos.IO.Domain.AssemblyInfo.cs
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\bin\Debug\netstandard1.6\Eventos.IO.Domain.dll
@@ -9,3 +8,4 @@ C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netstandard1.6\Eventos.IO.Domain.dll
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netstandard1.6\Eventos.IO.Domain.pdb
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netstandard1.6\Eventos.IO.Domain.csproj.CopyComplete
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netstandard1.6\Eventos.IO.Domain.csprojAssemblyReference.cache

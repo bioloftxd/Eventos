@@ -12,7 +12,7 @@ namespace Eventos.IO.Application.AutoMapper
             return  new MapperConfiguration(ps =>
             {
                 ps.AddProfile(new DomainToViewModelMappingProfile());
-                ps.AddProfile(new ViewToDomainModelMappingProfile());
+                ps.AddProfile(new ViewModelToDomainModelMappingProfile());
             });
         }
     }

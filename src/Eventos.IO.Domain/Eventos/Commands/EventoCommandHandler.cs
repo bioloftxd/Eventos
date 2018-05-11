@@ -41,7 +41,7 @@ namespace Eventos.IO.Domain.Eventos.Commands
                 message.NomeEmpresa, message.OrganizadorId,
                 endereco, message.CategoriaId);
 
-            if (EventoValido(evento)) return;
+            if (!EventoValido(evento)) return;
 
             //TODO:
             //Validações de negócio!

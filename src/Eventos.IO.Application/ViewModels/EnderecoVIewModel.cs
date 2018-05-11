@@ -6,10 +6,10 @@ using System.Text;
 
 namespace Eventos.IO.Application.ViewModels
 {
-    public class EnderecoVIewModel
+    public class EnderecoViewModel
     {
 
-        public EnderecoVIewModel()
+        public EnderecoViewModel()
         {
             Id = Guid.NewGuid();
         }
@@ -28,6 +28,7 @@ namespace Eventos.IO.Application.ViewModels
         public string Cep { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+        public Guid EventoId{ get; set; }
         public override string ToString()
         {
             return Logradouro + ", " + Numero + ", " + Bairro + ", " + Cidade + " - "  + Estado ;

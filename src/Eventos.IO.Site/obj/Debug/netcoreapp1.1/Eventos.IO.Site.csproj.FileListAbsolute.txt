@@ -3,7 +3,6 @@ C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\b
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp1.1\Eventos.IO.Site.runtimeconfig.dev.json
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp1.1\Eventos.IO.Site.dll
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp1.1\Eventos.IO.Site.pdb
-C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp1.1\Eventos.IO.Site.csprojResolveAssemblyReference.cache
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp1.1\Eventos.IO.Site.csproj.CoreCompileInputs.cache
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp1.1\Eventos.IO.Site.AssemblyInfo.cs
@@ -23,3 +22,4 @@ C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\b
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp1.1\Eventos.IO.Infra.CrossCutting.IoC.dll
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp1.1\Eventos.IO.Infra.CrossCutting.Bus.pdb
 C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp1.1\Eventos.IO.Infra.CrossCutting.IoC.pdb
+C:\Users\lorot\IdeaProjects\Curso Eduardo Pires\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp1.1\Eventos.IO.Site.csprojAssemblyReference.cache

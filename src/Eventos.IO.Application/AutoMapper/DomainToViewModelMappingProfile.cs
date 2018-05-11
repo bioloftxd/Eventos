@@ -9,7 +9,7 @@ namespace Eventos.IO.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<Evento, EventoViewModel>();
-            CreateMap<Endereco, EnderecoVIewModel>();
+            CreateMap<Endereco, EnderecoViewModel>();
             CreateMap<Categoria, CategoriaViewModel>();
         }
     }

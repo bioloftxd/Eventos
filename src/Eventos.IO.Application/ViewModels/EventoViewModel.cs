@@ -11,7 +11,7 @@ namespace Eventos.IO.Application.ViewModels
         public EventoViewModel()
         {
             Id = Guid.NewGuid();
-            Endereco = new EnderecoVIewModel();
+            Endereco = new EnderecoViewModel();
             Categoria = new CategoriaViewModel();
         }
 
@@ -30,7 +30,7 @@ namespace Eventos.IO.Application.ViewModels
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString ="{0:dd/MM/yyy}")]
         public DateTime DataInicio { get; set; }
-        [Display(Name ="Dia do evento")]
+        [Display(Name ="Fim do evento")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString ="{0:dd/MM/yyy}")]
         public DateTime DataFim { get; set; }
@@ -44,7 +44,7 @@ namespace Eventos.IO.Application.ViewModels
         [Display(Name ="Empresa / Grupo Organizador")]
         public string NomeEmpresa { get; set; }
 
-        public EnderecoVIewModel Endereco { get; set; } 
+        public EnderecoViewModel Endereco { get; set; } 
         public CategoriaViewModel Categoria { get; set; }
         public Guid CategoriaId { get; set; }
         public Guid OrganizadorId{ get; set; }

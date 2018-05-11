@@ -107,7 +107,7 @@ namespace Eventos.IO.Domain.Eventos
             if (Gratuito)
             {
                 RuleFor(c => c.Valor)
-                    .ExclusiveBetween(0, 0).When(e => e.Gratuito)
+                    .LessThanOrEqualTo(0).When(e => e.Gratuito)
                     .WithMessage("Eventos gratuitos nao devem conter valores acima de R$0,00!");
             }
         }

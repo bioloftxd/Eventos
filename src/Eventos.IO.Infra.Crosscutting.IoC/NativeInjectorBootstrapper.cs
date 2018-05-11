@@ -18,7 +18,7 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
 {
     public class NativeInjectorBootstrapper
     {
-        public static void RegistrarServices(IServiceCollection services)
+        public static void RegisterServices(IServiceCollection services)
         {
             //Application
             services.AddSingleton(Mapper.Configuration);
@@ -31,7 +31,7 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
             services.AddScoped<IHandler<ExcluirEventoCommand>, EventoCommandHandler>();
 
             //Domain - eventos
-            services.AddScoped<IDomainNotificationHandler<DomainNotification>, DomainNotificationHandler>();
+            services.AddScoped<IDomainNotificationHandler<DomainNotification>, DomainNotificationHandler>();                
             services.AddScoped<IHandler<EventoRegistradoEvent>, EventoEventHandler>();
             services.AddScoped<IHandler<EventoAtualizadoEvent>, EventoEventHandler>();
             services.AddScoped<IHandler<EventoExcluidoEvent>, EventoEventHandler>();

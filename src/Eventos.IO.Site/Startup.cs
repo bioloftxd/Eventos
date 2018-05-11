@@ -95,7 +95,7 @@ namespace Eventos.IO.Site
 
         private static void RegisterServices(IServiceCollection services)
         {
-            NativeInjectorBootstrapper.RegistrarServices(services);
+            NativeInjectorBootstrapper.RegisterServices(services);
         }
     }
 }

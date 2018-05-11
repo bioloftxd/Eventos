@@ -36,7 +36,7 @@ namespace Eventos.IO.Application.Services
 
         public EventoViewModel ObterPorId(Guid id)
         {
-            return _mapper.Map<EventoViewModel>(_eventoRepository.ObterEnderecoPorId(id));
+            return _mapper.Map<EventoViewModel>(_eventoRepository.ObterPorId(id));
         }
 
         public IEnumerable<EventoViewModel> ObterTodos()
