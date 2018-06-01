@@ -1,7 +1,6 @@
 ﻿using Eventos.IO.Application.ViewModels;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Eventos.IO.Application.Interfaces
 {
@@ -13,5 +12,8 @@ namespace Eventos.IO.Application.Interfaces
         EventoViewModel ObterPorId(Guid id);
         void Atualizar(EventoViewModel eventoViewModel);
         void Excluir(Guid id);
+        void AdicionarEndereco(EnderecoViewModel enderecoViewModel);
+        void AtualizarEndereco(EnderecoViewModel enderecoViewModel);
+        EnderecoViewModel ObterEnderecoPorId(Guid id);
     }
 }

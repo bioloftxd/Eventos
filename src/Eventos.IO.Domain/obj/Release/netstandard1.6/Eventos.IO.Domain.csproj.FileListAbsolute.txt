@@ -1,0 +1,11 @@
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\bin\Release\netstandard1.6\Eventos.IO.Domain.deps.json
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\bin\Release\netstandard1.6\Eventos.IO.Domain.dll
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\bin\Release\netstandard1.6\Eventos.IO.Domain.pdb
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\bin\Release\netstandard1.6\Eventos.IO.Domain.Core.dll
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\bin\Release\netstandard1.6\Eventos.IO.Domain.Core.pdb
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\obj\Release\netstandard1.6\Eventos.IO.Domain.csprojAssemblyReference.cache
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\obj\Release\netstandard1.6\Eventos.IO.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\obj\Release\netstandard1.6\Eventos.IO.Domain.AssemblyInfo.cs
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\obj\Release\netstandard1.6\Eventos.IO.Domain.csproj.CopyComplete
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\obj\Release\netstandard1.6\Eventos.IO.Domain.dll
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Domain\obj\Release\netstandard1.6\Eventos.IO.Domain.pdb

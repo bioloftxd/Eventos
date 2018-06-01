@@ -1,22 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using Eventos.IO.Application.Interfaces;
+using Eventos.IO.Application.ViewModels;
+using Eventos.IO.Domain.Core.Notifications;
+using Eventos.IO.Domain.Interfaces;
+using Eventos.IO.Infra.CrossCutting.Identity.Models;
+using Eventos.IO.Infra.CrossCutting.Identity.Models.AccountViewModels;
+using Eventos.IO.Infra.CrossCutting.Identity.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Eventos.IO.Site.Models;
-using Eventos.IO.Site.Models.AccountViewModels;
-using Eventos.IO.Site.Services;
+using System;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Eventos.IO.Site.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -24,6 +28,7 @@ namespace Eventos.IO.Site.Controllers
         private readonly ISmsSender _smsSender;
         private readonly ILogger _logger;
         private readonly string _externalCookieScheme;
+        private readonly IOrganizadorAppService _organizadorAppService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
@@ -31,13 +36,17 @@ namespace Eventos.IO.Site.Controllers
             IOptions<IdentityCookieOptions> identityCookieOptions,
             IEmailSender emailSender,
             ISmsSender smsSender,
-            ILoggerFactory loggerFactory)
+            ILoggerFactory loggerFactory,
+            IDomainNotificationHandler<DomainNotification> notifications, 
+            IOrganizadorAppService organizadorAppService,
+            IUser user) : base(notifications, user)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _externalCookieScheme = identityCookieOptions.Value.ExternalCookieAuthenticationScheme;
             _emailSender = emailSender;
             _smsSender = smsSender;
+            _organizadorAppService = organizadorAppService;
             _logger = loggerFactory.CreateLogger<AccountController>();
         }
 
@@ -113,15 +122,27 @@ namespace Eventos.IO.Site.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                user.Claims.Add(new IdentityUserClaim<string> {ClaimType = "Eventos", ClaimValue = "Ler"});
+                user.Claims.Add(new IdentityUserClaim<string> {ClaimType = "Eventos", ClaimValue = "Gravar"});
+
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=532713
-                    // Send an email with this link
-                    //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    //var callbackUrl = Url.Action(nameof(ConfirmEmail), "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
-                    //await _emailSender.SendEmailAsync(model.Email, "Confirm your account",
-                    //    $"Please confirm your account by clicking this link: <a href='{callbackUrl}'>link</a>");
+                    var organizador = new OrganizadorViewModel
+                    {
+                        Id = Guid.Parse(user.Id),
+                        Email = model.Email,
+                        Nome = model.Nome,
+                        CPF = model.CPF
+                    };
+
+                    _organizadorAppService.Registrar(organizador);
+                    if (!OperacaoValida())
+                    {
+                        await _userManager.DeleteAsync(user);
+                        return View(model);
+                    }
+
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     _logger.LogInformation(3, "User created a new account with password.");
                     return RedirectToLocal(returnUrl);
@@ -141,7 +162,7 @@ namespace Eventos.IO.Site.Controllers
         {
             await _signInManager.SignOutAsync();
             _logger.LogInformation(4, "User logged out.");
-            return RedirectToAction(nameof(HomeController.Index), "Home");
+            return RedirectToAction(nameof(EventosController.Index), "Eventos");
         }
 
         //
@@ -448,7 +469,7 @@ namespace Eventos.IO.Site.Controllers
         [HttpGet]
         public IActionResult AccessDenied()
         {
-            return View();
+            return RedirectToAction("Erros","Erro", new {id = 403});
         }
 
         #region Helpers
@@ -469,7 +490,7 @@ namespace Eventos.IO.Site.Controllers
             }
             else
             {
-                return RedirectToAction(nameof(HomeController.Index), "Home");
+                return RedirectToAction(nameof(EventosController.Index), "Eventos");
             }
         }
 

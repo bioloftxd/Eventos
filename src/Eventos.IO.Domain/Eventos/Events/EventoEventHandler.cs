@@ -6,14 +6,18 @@ using System.Text;
 
 namespace Eventos.IO.Domain.Eventos.Events
 {
-    public class EventoEventHandler : IHandler<EventoRegistradoEvent>,
+    public class EventoEventHandler : 
+        IHandler<EventoRegistradoEvent>,
         IHandler<EventoAtualizadoEvent>,
-        IHandler<EventoExcluidoEvent>
+        IHandler<EventoExcluidoEvent>,
+        IHandler<EnderecoEventoAdicionadoEvent>,
+        IHandler<EnderecoEventoAtualizadoEvent>
     {
-        public void Handle(EventoExcluidoEvent message)
+
+        public void Handle(EventoRegistradoEvent message)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Evento excluido com sucesso!");
+            Console.WriteLine("Evento registrado com sucesso!");
         }
 
         public void Handle(EventoAtualizadoEvent message)
@@ -22,10 +26,22 @@ namespace Eventos.IO.Domain.Eventos.Events
             Console.WriteLine("Evento atualizado com sucesso!");
         }
 
-        public void Handle(EventoRegistradoEvent message)
+        public void Handle(EventoExcluidoEvent message)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Evento registrado com sucesso!");
+            Console.WriteLine("Evento excluido com sucesso!");
+        }
+
+        public void Handle(EnderecoEventoAdicionadoEvent message)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Endereco do evento adicionado com sucesso!");
+        }
+
+        public void Handle(EnderecoEventoAtualizadoEvent message)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Endereco do evento atualizado com sucesso!");
         }
     }
 }

@@ -1,7 +1,9 @@
 ﻿@using System.Collections.Generic
+@using Eventos.IO.Infra.CrossCutting.Identity.Models
+@using Eventos.IO.Infra.CrossCutting.Identity.Models.AccountViewModels
 @using Microsoft.AspNetCore.Http
 @using Microsoft.AspNetCore.Http.Authentication
-@model LoginViewModel
+@model Eventos.IO.Infra.CrossCutting.Identity.Models.AccountViewModels.LoginViewModel
 @inject SignInManager<ApplicationUser> SignInManager
 
 @{

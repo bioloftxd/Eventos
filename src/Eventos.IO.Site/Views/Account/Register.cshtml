@@ -1,4 +1,5 @@
-﻿@model RegisterViewModel
+﻿@using Eventos.IO.Infra.CrossCutting.Identity.Models.AccountViewModels
+@model Eventos.IO.Infra.CrossCutting.Identity.Models.AccountViewModels.RegisterViewModel
 @{
     ViewData["Title"] = "Register";
 }
@@ -8,7 +9,23 @@
 <form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
     <h4>Create a new account.</h4>
     <hr />
-    <div asp-validation-summary="All" class="text-danger"></div>
+    <vc:summary />
+    <div class="form-group">
+        <label asp-for="Nome" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CPF" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="CPF" class="form-control" />
+            <span asp-validation-for="CPF" class="text-danger"></span>
+        </div>
+    </div>
+
     <div class="form-group">
         <label asp-for="Email" class="col-md-2 control-label"></label>
         <div class="col-md-10">
@@ -16,6 +33,7 @@
             <span asp-validation-for="Email" class="text-danger"></span>
         </div>
     </div>
+
     <div class="form-group">
         <label asp-for="Password" class="col-md-2 control-label"></label>
         <div class="col-md-10">

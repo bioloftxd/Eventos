@@ -1,13 +1,17 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
+using Elmah.Io.AspNetCore;
+using Elmah.Io.Extensions.Logging;
+using Eventos.IO.Infra.CrossCutting.AspNetFilters;
 using Eventos.IO.Infra.CrossCutting.Bus;
+using Eventos.IO.Infra.CrossCutting.Identity.Data;
+using Eventos.IO.Infra.CrossCutting.Identity.Models;
 using Eventos.IO.Infra.CrossCutting.IoC;
-using Eventos.IO.Site.Data;
-using Eventos.IO.Site.Models;
-using Eventos.IO.Site.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,7 +30,7 @@ namespace Eventos.IO.Site
 
             if (env.IsDevelopment())
             {
-                // For more details on using the user secret store see https://go.microsoft.com/fwlink/?LinkID=532709
+                
                 builder.AddUserSecrets<Startup>();
             }
 
@@ -36,10 +40,9 @@ namespace Eventos.IO.Site
 
         public IConfigurationRoot Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -47,17 +50,23 @@ namespace Eventos.IO.Site
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddMvc();
-            services.AddAutoMapper();
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("PodeLerEventos", policy => policy.RequireClaim("Eventos","Ler"));
+                options.AddPolicy("PodeGravar", policy => policy.RequireClaim("Eventos","Gravar"));
+            });
 
-            // Add application services.
-            services.AddTransient<IEmailSender, AuthMessageSender>();
-            services.AddTransient<ISmsSender, AuthMessageSender>();
+            services.AddLogging();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new ServiceFilterAttribute(typeof(GlobalExcpetionHandlingFilter)));
+                options.Filters.Add(new ServiceFilterAttribute(typeof(GlobalActionLogger)));
+            });
+            services.AddAutoMapper();
 
             RegisterServices(services);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, 
             IHostingEnvironment env, 
             ILoggerFactory loggerFactory, 
@@ -65,6 +74,9 @@ namespace Eventos.IO.Site
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            loggerFactory.AddElmahIo("81378002d1044733af806b28394199d0", new Guid("b7411135-9483-4675-945c-067f8544bf00"));
+            app.UseElmahIo("81378002d1044733af806b28394199d0", new Guid("b7411135-9483-4675-945c-067f8544bf00"));
 
             if (env.IsDevelopment())
             {
@@ -74,14 +86,14 @@ namespace Eventos.IO.Site
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/erro-de-aplicacao");
+                app.UseStatusCodePagesWithReExecute("/erro-de-aplicacao/{0}");
             }
 
             app.UseStaticFiles();
 
             app.UseIdentity();
 
-            // Add external authentication middleware below. To configure them please see https://go.microsoft.com/fwlink/?LinkID=532715
 
             app.UseMvc(routes =>
             {
