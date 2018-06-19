@@ -9,4 +9,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Eventos.IO.Domain.Core\Eventos.IO.Domain.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\.nuget\packages\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

@@ -14,7 +14,7 @@ namespace Eventos.IO.Domain.Core.Notifications
             _notifications = new List<DomainNotification>();
         }
 
-        public List<DomainNotification> GetNotification()
+        public List<DomainNotification> GetNotifications()
         {
             return _notifications;
         }

@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Elmah.Io.Client;
+﻿using Elmah.Io.Client;
 using Elmah.Io.Client.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Eventos.IO.Infra.CrossCutting.AspNetFilters
 {
@@ -24,11 +21,6 @@ namespace Eventos.IO.Infra.CrossCutting.AspNetFilters
         {
             _logger = logger;
             _hostingEnvironment = hostingEnvironment;
-        }
-        
-        public void OnActionExecuting(ActionExecutingContext context)
-        {
-            //throw new System.NotImplementedException();
         }
 
         public void OnActionExecuted(ActionExecutedContext context)
@@ -46,7 +38,7 @@ namespace Eventos.IO.Infra.CrossCutting.AspNetFilters
                     TimeStamp = DateTime.Now
                 };
 
-                _logger.LogInformation(1, data.ToString(), "Log de Auditoria.");
+                _logger.LogInformation(1, data.ToString());
             }
 
             if (_hostingEnvironment.IsProduction())
@@ -72,6 +64,11 @@ namespace Eventos.IO.Infra.CrossCutting.AspNetFilters
                 var client = ElmahioAPI.Create("81378002d1044733af806b28394199d0");
                 client.Messages.Create(new Guid("b7411135-9483-4675-945c-067f8544bf00").ToString(), message);
             }
+        }
+
+        public void OnActionExecuting(ActionExecutingContext context)
+        {
+            //throw new System.NotImplementedException();
         }
 
         private static List<Item> Form(HttpContext httpContext)

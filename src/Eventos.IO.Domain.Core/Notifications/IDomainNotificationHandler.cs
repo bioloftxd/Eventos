@@ -8,6 +8,6 @@ namespace Eventos.IO.Domain.Core.Notifications
     public interface IDomainNotificationHandler<T> : IHandler<T> where T : Message
     {
         bool HasNotification();
-        List<T> GetNotification();
+        List<T> GetNotifications();
     }
 }

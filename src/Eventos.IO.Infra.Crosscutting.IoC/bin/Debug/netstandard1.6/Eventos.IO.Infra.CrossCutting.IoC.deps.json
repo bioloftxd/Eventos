@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v1.6/",
-    "signature": "44917fe6a5aaf2e0d28871e43c32352a5d814b6d"
+    "signature": "05b7d1cb84441b8363c81640af33e811b4370625"
   },
   "compilationOptions": {},
   "targets": {
@@ -138,10 +138,10 @@
       },
       "microsoft.aspnetcore.antiforgery/1.1.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.DataProtection": "1.1.0",
+          "Microsoft.AspNetCore.DataProtection": "1.1.1",
           "Microsoft.AspNetCore.Http.Abstractions": "1.1.1",
           "Microsoft.AspNetCore.Http.Extensions": "1.1.1",
-          "Microsoft.AspNetCore.WebUtilities": "1.1.0",
+          "Microsoft.AspNetCore.WebUtilities": "1.1.1",
           "Microsoft.Extensions.ObjectPool": "1.1.0",
           "NETStandard.Library": "1.6.1"
         },
@@ -149,14 +149,14 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.Antiforgery.dll": {}
         }
       },
-      "microsoft.aspnetcore.authentication/1.1.0": {
+      "microsoft.aspnetcore.authentication/1.1.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.DataProtection": "1.1.0",
-          "Microsoft.AspNetCore.Http": "1.1.0",
+          "Microsoft.AspNetCore.DataProtection": "1.1.1",
+          "Microsoft.AspNetCore.Http": "1.1.1",
           "Microsoft.AspNetCore.Http.Extensions": "1.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "1.1.1",
           "Microsoft.Extensions.Options": "1.1.1",
-          "Microsoft.Extensions.WebEncoders": "1.1.0",
+          "Microsoft.Extensions.WebEncoders": "1.1.1",
           "NETStandard.Library": "1.6.1"
         },
         "runtime": {
@@ -165,19 +165,19 @@
       },
       "microsoft.aspnetcore.authentication.cookies/1.1.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication": "1.1.0",
+          "Microsoft.AspNetCore.Authentication": "1.1.1",
           "Microsoft.Extensions.Options": "1.1.1",
-          "Microsoft.Extensions.WebEncoders": "1.1.0",
+          "Microsoft.Extensions.WebEncoders": "1.1.1",
           "NETStandard.Library": "1.6.1"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Cookies.dll": {}
         }
       },
-      "microsoft.aspnetcore.authentication.jwtbearer/1.1.0": {
+      "microsoft.aspnetcore.authentication.jwtbearer/1.1.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication": "1.1.0",
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "2.1.0",
+          "Microsoft.AspNetCore.Authentication": "1.1.1",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "2.1.2",
           "NETStandard.Library": "1.6.1"
         },
         "runtime": {
@@ -195,7 +195,7 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
-      "microsoft.aspnetcore.cryptography.internal/1.1.0": {
+      "microsoft.aspnetcore.cryptography.internal/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.1"
         },
@@ -205,17 +205,17 @@
       },
       "microsoft.aspnetcore.cryptography.keyderivation/1.1.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "1.1.0",
+          "Microsoft.AspNetCore.Cryptography.Internal": "1.1.1",
           "NETStandard.Library": "1.6.1"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
         }
       },
-      "microsoft.aspnetcore.dataprotection/1.1.0": {
+      "microsoft.aspnetcore.dataprotection/1.1.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "1.1.0",
-          "Microsoft.AspNetCore.DataProtection.Abstractions": "1.1.0",
+          "Microsoft.AspNetCore.Cryptography.Internal": "1.1.1",
+          "Microsoft.AspNetCore.DataProtection.Abstractions": "1.1.1",
           "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
           "Microsoft.Extensions.Logging.Abstractions": "1.1.1",
@@ -229,7 +229,7 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.DataProtection.dll": {}
         }
       },
-      "microsoft.aspnetcore.dataprotection.abstractions/1.1.0": {
+      "microsoft.aspnetcore.dataprotection.abstractions/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0"
@@ -279,10 +279,10 @@
           "lib/netstandard1.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
         }
       },
-      "microsoft.aspnetcore.http/1.1.0": {
+      "microsoft.aspnetcore.http/1.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "1.1.1",
-          "Microsoft.AspNetCore.WebUtilities": "1.1.0",
+          "Microsoft.AspNetCore.WebUtilities": "1.1.1",
           "Microsoft.Extensions.ObjectPool": "1.1.0",
           "Microsoft.Extensions.Options": "1.1.1",
           "Microsoft.Net.Http.Headers": "1.1.1",
@@ -380,7 +380,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "1.1.0",
           "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.1",
-          "Microsoft.AspNetCore.Http": "1.1.0",
+          "Microsoft.AspNetCore.Http": "1.1.1",
           "Microsoft.AspNetCore.Mvc.Abstractions": "1.1.1",
           "Microsoft.AspNetCore.ResponseCaching.Abstractions": "1.1.0",
           "Microsoft.AspNetCore.Routing": "1.1.0",
@@ -425,7 +425,7 @@
           "Microsoft.AspNetCore.Mvc.Core": "1.1.1",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "1.1.1",
           "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.1.1",
-          "Microsoft.Extensions.WebEncoders": "1.1.0",
+          "Microsoft.Extensions.WebEncoders": "1.1.1",
           "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "9.0.1",
           "System.Buffers": "4.3.0",
@@ -466,7 +466,7 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.Routing.Abstractions.dll": {}
         }
       },
-      "microsoft.aspnetcore.webutilities/1.1.0": {
+      "microsoft.aspnetcore.webutilities/1.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "1.1.0",
           "Microsoft.Net.Http.Headers": "1.1.1",
@@ -777,7 +777,7 @@
           "lib/netstandard1.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "microsoft.extensions.webencoders/1.1.0": {
+      "microsoft.extensions.webencoders/1.1.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
           "Microsoft.Extensions.Options": "1.1.1",
@@ -788,7 +788,7 @@
           "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
-      "microsoft.identitymodel.logging/1.1.0": {
+      "microsoft.identitymodel.logging/1.1.2": {
         "dependencies": {
           "System.Diagnostics.Tracing": "4.3.0",
           "System.Globalization": "4.3.0",
@@ -799,29 +799,29 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
-      "microsoft.identitymodel.protocols/2.1.0": {
+      "microsoft.identitymodel.protocols/2.1.2": {
         "dependencies": {
           "System.Collections.Specialized": "4.3.0",
           "System.Diagnostics.Contracts": "4.3.0",
-          "System.IdentityModel.Tokens.Jwt": "5.1.0",
+          "System.IdentityModel.Tokens.Jwt": "5.1.2",
           "System.Net.Http": "4.3.0"
         },
         "runtime": {
           "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.dll": {}
         }
       },
-      "microsoft.identitymodel.protocols.openidconnect/2.1.0": {
+      "microsoft.identitymodel.protocols.openidconnect/2.1.2": {
         "dependencies": {
-          "Microsoft.IdentityModel.Protocols": "2.1.0",
+          "Microsoft.IdentityModel.Protocols": "2.1.2",
           "System.Dynamic.Runtime": "4.3.0"
         },
         "runtime": {
           "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
         }
       },
-      "microsoft.identitymodel.tokens/5.1.0": {
+      "microsoft.identitymodel.tokens/5.1.2": {
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "1.1.0",
+          "Microsoft.IdentityModel.Logging": "1.1.2",
           "Newtonsoft.Json": "9.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -1335,9 +1335,9 @@
           "System.Runtime.InteropServices": "4.3.0"
         }
       },
-      "system.identitymodel.tokens.jwt/5.1.0": {
+      "system.identitymodel.tokens.jwt/5.1.2": {
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "5.1.0"
+          "Microsoft.IdentityModel.Tokens": "5.1.2"
         },
         "runtime": {
           "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -2198,7 +2198,7 @@
       "eventos.io.infra.crosscutting.identity/1.0.0": {
         "dependencies": {
           "Eventos.IO.Domain": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "1.1.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "1.1.1",
           "Microsoft.AspNetCore.Authorization": "1.1.0",
           "Microsoft.AspNetCore.Http.Abstractions": "1.1.1",
           "Microsoft.AspNetCore.Identity": "1.1.0",
@@ -2283,12 +2283,12 @@
       "path": "microsoft.aspnetcore.antiforgery/1.1.0",
       "hashPath": "microsoft.aspnetcore.antiforgery.1.1.0.nupkg.sha512"
     },
-    "microsoft.aspnetcore.authentication/1.1.0": {
+    "microsoft.aspnetcore.authentication/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zapEpMe6NM7S2pNYtR1OMQSHLrDPjRASIt7lktBTt6w6+0ocSxwiIoNyRiBys1VbhGJQnE9jNWjj5VpMJbnB9A==",
-      "path": "microsoft.aspnetcore.authentication/1.1.0",
-      "hashPath": "microsoft.aspnetcore.authentication.1.1.0.nupkg.sha512"
+      "sha512": "sha512-KQ39XT2JiQOTdA+/OeXNNAw8cBh5D6N+qKc7bXdtaZH6aXcCL8Au5N6AVtLtwJnr603Rn6ZtuimZNFC7XOz5WA==",
+      "path": "microsoft.aspnetcore.authentication/1.1.1",
+      "hashPath": "microsoft.aspnetcore.authentication.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.authentication.cookies/1.1.0": {
       "type": "package",
@@ -2297,12 +2297,12 @@
       "path": "microsoft.aspnetcore.authentication.cookies/1.1.0",
       "hashPath": "microsoft.aspnetcore.authentication.cookies.1.1.0.nupkg.sha512"
     },
-    "microsoft.aspnetcore.authentication.jwtbearer/1.1.0": {
+    "microsoft.aspnetcore.authentication.jwtbearer/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DDfKB5gvUG01/Za5/2h8VMle1VYVC4doV4vADy/pM+yIqadY8V2YohzJRPkjVPnj4skir1Sv8/YyskCC6/lq1g==",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/1.1.0",
-      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.1.1.0.nupkg.sha512"
+      "sha512": "sha512-IHV4qsBA8Sym042rM7SpiMEaC+Pi/s5Iz+OyZ3w/hQZcaUZtAfmjlYgdBP7blE4EqYjHpz0iNuqdh0A4rf2sSA==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/1.1.1",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.authorization/1.1.0": {
       "type": "package",
@@ -2311,12 +2311,12 @@
       "path": "microsoft.aspnetcore.authorization/1.1.0",
       "hashPath": "microsoft.aspnetcore.authorization.1.1.0.nupkg.sha512"
     },
-    "microsoft.aspnetcore.cryptography.internal/1.1.0": {
+    "microsoft.aspnetcore.cryptography.internal/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Oy0pgxQkusvQwIrwbHvGVZhwk59qRVKxcer6HsWw0jCEq2LoQ7mj7x7DovE5ub8UvffLYWx77NMF5uwPtkl8KA==",
-      "path": "microsoft.aspnetcore.cryptography.internal/1.1.0",
-      "hashPath": "microsoft.aspnetcore.cryptography.internal.1.1.0.nupkg.sha512"
+      "sha512": "sha512-5UWkDHCCFX19CFDZmLIH/WFffCGZz+eFmbCPCcUXjn7oHl3el34aUNB5liKtVmcM4TP1+OjxCMomU6nQy/g6CA==",
+      "path": "microsoft.aspnetcore.cryptography.internal/1.1.1",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.cryptography.keyderivation/1.1.0": {
       "type": "package",
@@ -2325,19 +2325,19 @@
       "path": "microsoft.aspnetcore.cryptography.keyderivation/1.1.0",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.1.1.0.nupkg.sha512"
     },
-    "microsoft.aspnetcore.dataprotection/1.1.0": {
+    "microsoft.aspnetcore.dataprotection/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wu8pk94CExaLvwwDSnXkTtsdL8mRxbLH8uCKbbPqbtIstSM6bOw/454OvOYKf61BB+It//ItJJYdZTy2j8Kelw==",
-      "path": "microsoft.aspnetcore.dataprotection/1.1.0",
-      "hashPath": "microsoft.aspnetcore.dataprotection.1.1.0.nupkg.sha512"
+      "sha512": "sha512-5R0AKqx/NJ/GHuDymZx1/gXcYl1+/OLo5XPNejBKnWqm/EiZs6+bOM1+O8uEdr3RygUIDTWSCEHq3W7bKt0GSg==",
+      "path": "microsoft.aspnetcore.dataprotection/1.1.1",
+      "hashPath": "microsoft.aspnetcore.dataprotection.1.1.1.nupkg.sha512"
     },
-    "microsoft.aspnetcore.dataprotection.abstractions/1.1.0": {
+    "microsoft.aspnetcore.dataprotection.abstractions/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WW6qKPh9A5lNh/bFlXIMttlbLmm2K0O3kyZuFIlL4ShOMyhrJeCHoWPWQ+S5eUBdcuOnd9sPwhlmI5Nvb3NjMA==",
-      "path": "microsoft.aspnetcore.dataprotection.abstractions/1.1.0",
-      "hashPath": "microsoft.aspnetcore.dataprotection.abstractions.1.1.0.nupkg.sha512"
+      "sha512": "sha512-vXD8MXsGa5tt9Ez8GlC8rh8YmU+sd/aY4MKtpT3bSusga2fgXB2kUNs1ZbHzKt1ciAlUEmUTeb55qzhIqG3yUg==",
+      "path": "microsoft.aspnetcore.dataprotection.abstractions/1.1.1",
+      "hashPath": "microsoft.aspnetcore.dataprotection.abstractions.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.diagnostics.abstractions/1.1.0": {
       "type": "package",
@@ -2367,12 +2367,12 @@
       "path": "microsoft.aspnetcore.html.abstractions/1.1.0",
       "hashPath": "microsoft.aspnetcore.html.abstractions.1.1.0.nupkg.sha512"
     },
-    "microsoft.aspnetcore.http/1.1.0": {
+    "microsoft.aspnetcore.http/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-N5ejgXmkUH/CQA+lz18HQb9cDZdA365Tm128yYyP34N46uiR9NswEDravug2DXrRiTo+2hOwPT1Tvby3Cdf6lQ==",
-      "path": "microsoft.aspnetcore.http/1.1.0",
-      "hashPath": "microsoft.aspnetcore.http.1.1.0.nupkg.sha512"
+      "sha512": "sha512-chwq7cwAe+CnnGIvtarKxeti2hDTdqZfR2n7tLghPgJS/62fDJiQAWjYuZfWSv7uG6JHGQJruR55hfL2GGJxVA==",
+      "path": "microsoft.aspnetcore.http/1.1.1",
+      "hashPath": "microsoft.aspnetcore.http.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.http.abstractions/1.1.1": {
       "type": "package",
@@ -2472,12 +2472,12 @@
       "path": "microsoft.aspnetcore.routing.abstractions/1.1.0",
       "hashPath": "microsoft.aspnetcore.routing.abstractions.1.1.0.nupkg.sha512"
     },
-    "microsoft.aspnetcore.webutilities/1.1.0": {
+    "microsoft.aspnetcore.webutilities/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9w3aHPRUAx+1xOTcsZF6AJCS42viNqWeTcgIE1dmlK/G3NCFkes+MVxwvKt9U9pFIomxqRnD+MGRoBeruEKPbQ==",
-      "path": "microsoft.aspnetcore.webutilities/1.1.0",
-      "hashPath": "microsoft.aspnetcore.webutilities.1.1.0.nupkg.sha512"
+      "sha512": "sha512-yxNSN5cpbZei2UIrUL5MTWSUKSA33dAZLrMIF6eE+XYwakxdWwgrbOTJz1gRJ/rUyvMN1Iu6ORcZr1/WMB0tzw==",
+      "path": "microsoft.aspnetcore.webutilities/1.1.1",
+      "hashPath": "microsoft.aspnetcore.webutilities.1.1.1.nupkg.sha512"
     },
     "microsoft.csharp/4.3.0": {
       "type": "package",
@@ -2675,40 +2675,40 @@
       "path": "microsoft.extensions.primitives/1.1.0",
       "hashPath": "microsoft.extensions.primitives.1.1.0.nupkg.sha512"
     },
-    "microsoft.extensions.webencoders/1.1.0": {
+    "microsoft.extensions.webencoders/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YnUfcLe/FYL3Mft5HPv7dSSKfZZCZwLG2GQfv3vuxdY4AbWOYLqq/3wIPCNIrgMXvzralWdkESNsb9iw5gKdpg==",
-      "path": "microsoft.extensions.webencoders/1.1.0",
-      "hashPath": "microsoft.extensions.webencoders.1.1.0.nupkg.sha512"
+      "sha512": "sha512-orwMgiF/lf/Uwt1CGV3o8OnycVLXg7rCk+y1BlNgDARtoBnC5VE4xoRfh0WkX+QktGSigt3dEPAuDANfWtqlCg==",
+      "path": "microsoft.extensions.webencoders/1.1.1",
+      "hashPath": "microsoft.extensions.webencoders.1.1.1.nupkg.sha512"
     },
-    "microsoft.identitymodel.logging/1.1.0": {
+    "microsoft.identitymodel.logging/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Dv3G9GIdKyCc4xJjZECQosRJ9//4q/yXmb0vOUOjN1XpkCcHEt5UJ5S4zm8yJR+5tLODA159G2QtVNtK1RsAXw==",
-      "path": "microsoft.identitymodel.logging/1.1.0",
-      "hashPath": "microsoft.identitymodel.logging.1.1.0.nupkg.sha512"
+      "sha512": "sha512-QPMFfRVnRkCzGpEQz/YEPsbwUjAp5R1W2dpaXHlJJNA7fp9gV4m4TDKvvXhQnqdEL0a0luNrYFZrbz7NRI1rXQ==",
+      "path": "microsoft.identitymodel.logging/1.1.2",
+      "hashPath": "microsoft.identitymodel.logging.1.1.2.nupkg.sha512"
     },
-    "microsoft.identitymodel.protocols/2.1.0": {
+    "microsoft.identitymodel.protocols/2.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yi7uK5JL5JL66Srnj96vMge7ZMCUM2rTVC6P43cORSCaY+3/motXH+3/8o/T/Xpirv7gAOkRPxGwgARcsuRWPw==",
-      "path": "microsoft.identitymodel.protocols/2.1.0",
-      "hashPath": "microsoft.identitymodel.protocols.2.1.0.nupkg.sha512"
+      "sha512": "sha512-DYjTihC3VrzhXiv2cdoAxBx2RhFphad5BXfwmebdt3aNqrUpCOfsfYN7Ivequ05MiNBfgjBfWf8pd0+6S8jSCA==",
+      "path": "microsoft.identitymodel.protocols/2.1.2",
+      "hashPath": "microsoft.identitymodel.protocols.2.1.2.nupkg.sha512"
     },
-    "microsoft.identitymodel.protocols.openidconnect/2.1.0": {
+    "microsoft.identitymodel.protocols.openidconnect/2.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZqlqwWZ3ce1v/ivSnfMSTfSlZqM6lZbN6BhnwF92ZNvtFMWKp5cpymlzxEx0h7qzGHf15fEQZGWe7rLHx//tQw==",
-      "path": "microsoft.identitymodel.protocols.openidconnect/2.1.0",
-      "hashPath": "microsoft.identitymodel.protocols.openidconnect.2.1.0.nupkg.sha512"
+      "sha512": "sha512-oiB2Of9DWmmrWUiAX1MEjybrdQ0EpJq0FbtpxGuytecVaMmfIu1xzVEKrzmqxCSp25Ct+gtLVtDsdgOsgYA0TQ==",
+      "path": "microsoft.identitymodel.protocols.openidconnect/2.1.2",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.2.1.2.nupkg.sha512"
     },
-    "microsoft.identitymodel.tokens/5.1.0": {
+    "microsoft.identitymodel.tokens/5.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hg1+IbP0F9oQ8qIxQobKoOczrwufYMNHrSXj+xF1+4VCpvymhyvpVcgLqi5GOie1qcQYp/yBy04dpBImemVXKg==",
-      "path": "microsoft.identitymodel.tokens/5.1.0",
-      "hashPath": "microsoft.identitymodel.tokens.5.1.0.nupkg.sha512"
+      "sha512": "sha512-m7UP4iY/dWfVwDNNSVGvZV6r4PwflaK++sYQsTTGAMILYb5IJ4Z4rKJRCA0uKjo6jTcdWlQxyPsxoEVwjqPKqQ==",
+      "path": "microsoft.identitymodel.tokens/5.1.2",
+      "hashPath": "microsoft.identitymodel.tokens.5.1.2.nupkg.sha512"
     },
     "microsoft.net.http.headers/1.1.1": {
       "type": "package",
@@ -3074,12 +3074,12 @@
       "path": "system.globalization.extensions/4.3.0",
       "hashPath": "system.globalization.extensions.4.3.0.nupkg.sha512"
     },
-    "system.identitymodel.tokens.jwt/5.1.0": {
+    "system.identitymodel.tokens.jwt/5.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oMcOZ0/7seZYkv8yRPBlfHyc7K/33TS0hVtshvOAiH9rHWqCb3htq4mEbOtqMTo45pzblcm10ArpERlZrSS69A==",
-      "path": "system.identitymodel.tokens.jwt/5.1.0",
-      "hashPath": "system.identitymodel.tokens.jwt.5.1.0.nupkg.sha512"
+      "sha512": "sha512-wneX9Rv1p8zXNQ8v3mzKPlja3dP0dQY0Ea/0KUtCtlyqB9WtYoEWxTidqgq5iBHGvG5p/yuFKfedgvt2y68HpA==",
+      "path": "system.identitymodel.tokens.jwt/5.1.2",
+      "hashPath": "system.identitymodel.tokens.jwt.5.1.2.nupkg.sha512"
     },
     "system.interactive.async/3.0.0": {
       "type": "package",

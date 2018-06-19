@@ -38,7 +38,7 @@ C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\
 C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.IoC.pdb
 C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\bin\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Identity.dll
 C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\bin\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.Identity.pdb
-C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
-C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.IoC.csproj.CopyComplete
 C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\bin\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.AspNetFilters.dll
 C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\bin\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.AspNetFilters.pdb
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
+C:\Users\lorot\Documents\Projetos\Eventos\src\Eventos.IO.Infra.Crosscutting.IoC\obj\Debug\netstandard1.6\Eventos.IO.Infra.CrossCutting.IoC.csproj.CopyComplete
